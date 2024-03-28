@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="{% static "logins_front/css/login.css" %}">
+</head>
+<body>
+  <div class="top">
+  </div>
+  <div class="container centerize"> 
+    <div>
+      <p>싸피로고</p>
+      아이디: <input type="text">
+      비밀번호: <input type="password">
+      <input type="button" value="로그인">
+    </div>
+      
+    <div class="menu_box">
+      {% comment %} 오른쪽 급식정보로딩페이지 {% endcomment %}
+    </div>
+  </div>
+</body>
+</html>
