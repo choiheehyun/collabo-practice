@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    align-items: center;
+    /* justify-items: center; */
+    justify-content: center;
+    border: solid black 2px;
+  }
+  
+  
+  .flex-item {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: aqua;
+  }
+  
+  
+  .top {
+    display: flex;
+    background-color: #0275D8;
+    height: 20px;
+    width: 100%;
+  }
+  
+  body {
+    margin: 0;
+  }
