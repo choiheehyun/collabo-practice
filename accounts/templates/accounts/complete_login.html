@@ -6,11 +6,8 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>로그인</h1>
-  <form action="{% url "accounts:login" %}" method="POST">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="로그인">
-  </form>
+  <h1>로그인성공</h1>
+  <h2>{{ user.username }} 님, 3반에 오신걸</h2>
+  
 </body>
 </html>

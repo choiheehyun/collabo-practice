@@ -1,21 +1,35 @@
 from django.shortcuts import render
 from .models import Date, MainLunch, SubLunch
+from django.contrib.auth.forms import AuthenticationForm
+
+
 
 
 # Create your views here.
 def index(request):
     # DB에서 전체 게시글을 조회 후
+
+        
     dates = Date.objects.all()
     mainlunchs = MainLunch.objects.all()
     sublunchs = SubLunch.objects.all()
-
+    form = AuthenticationForm()
     # 메인 페이지를 응답 (render)
     # context는 다름 이름이여도 상관 없음(단, 반드시 딕셔너리여야 함)
-    context = {
-        'dates': dates,
-        'mainlunchs': mainlunchs,
-        'sublunchs': sublunchs,
-    }
+    if mainlunchs or sublunchs:
+        context = {
+            'dates': dates,
+            'mainlunchs': mainlunchs,
+            'sublunchs': sublunchs,
+            'form': form,
+            'success' : True,
+        }
+    else:
+       context = {
+       
+            'success' : False,
+            'message': '메뉴가 없습니다.'
+        } 
     
     return render(request, 'articles/index.html', context)
 

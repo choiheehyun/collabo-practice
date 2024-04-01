@@ -14,10 +14,14 @@ def login(request):
             user = form.get_user()
             # 로그인을 진행 (세션을 생성)
             auth_login(request, user)
-            return render(request, 'accounts/complete_login.html', context)
+            return redirect('accounts:complete_login')
     # 요청 메서드가 POST가 아니라면, login 페이지를 응답
     context = {
         'form': form,
     } 
     return render(request, 'articles/index.html', context)
+    # return redirect('articles:index')
+    
+def complete_login(request):
+    return render(request,'accounts/complete_login.html' )
 
