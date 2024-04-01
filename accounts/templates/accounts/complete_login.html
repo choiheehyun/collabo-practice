@@ -1,13 +1,19 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="{% static 'accounts/css/accounts.css' %}">
 </head>
 <body>
-  <h1>로그인성공</h1>
-  <h2>{{ user.username }} 님, 3반에 오신걸</h2>
+  <div class="top"></div>
+  <div>
+    <h2>{{ user.username }}님, 3반에 오신 것을 환영합니다</h2>
+    <h2>{{ user.password }}가 들키지 않도록 조심해 주세요!</h2>
+  </div>
   
 </body>
 </html>
