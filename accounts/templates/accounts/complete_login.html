@@ -7,13 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="{% static 'accounts/css/accounts.css' %}">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap')
+  </style>
 </head>
 <body>
   <div class="top"></div>
-  <div>
-    <h2>{{ user.username }}님, 3반에 오신 것을 환영합니다</h2>
-    <h2>{{ user.password }}가 들키지 않도록 조심해 주세요!</h2>
+
+  <div class="contentbox gowun-dodum-regular">
+    <div class="vertical_center">
+      <div>
+        <h2 class="text_center">{{ user.username }}님, 3반에 오신 것을 환영합니다🍙</h2>
+        <h2 class="text_center">password가 들키지 않도록 조심해 주세요!</h2>
+      </div>
+      <div class="container">
+        <a href="{% url "articles:index" %}" class="button center bold grey">홈으로 돌아가기</a>
+      </div>
+    </div>
   </div>
-  
 </body>
 </html>

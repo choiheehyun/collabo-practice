@@ -7,12 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
   <link rel="stylesheet" href="{% static 'articles/css/index.css' %}">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap')
+  </style>
 </head>
 <body>
   <div class="top">
   </div>
 
-  <div class="container">
+  <div class="container gowun-dodum-regular">
     <div class="login-box"> 
       <div>
         <p>싸피로고</p>
@@ -20,23 +23,17 @@
       <form action="{% url "accounts:login" %}" method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <input type="submit" value="로그인">
+        <input type="submit" value="로그인" class="login-button gowun-dodum-regular">
       </form>
     </div>
         
-    <div class="menu-box">
-        {% comment %} {% for item in dates %}
-            <p>날짜 :{{item.lunch_date}}</p>
-        {% endfor %} {% endcomment %}
-        {% comment %} <hr> {% endcomment %}
-
+    <div class="menu-box smaller">
+      <div>
         {% for item in mainlunchs %}
             <p>{{ item.title }}</p>
-            
             <p>한식 : {{ item.content_20_korean_menu }}</p>
             <p>특별식 : {{ item.content_20_special_menu }}</p>
         {% endfor %}
-      
         <hr>
         {% for item in sublunchs %}
             <p>{{ item.title }}</p>
@@ -44,6 +41,7 @@
             <p>샌드위치 : {{ item.content_10_sandwich_menu }}</p>
             <p>샐러드 : {{ item.content_10_salad_menu }}</p>
         {% endfor %}
+      </div>
     </div>
   </div>
 </body>

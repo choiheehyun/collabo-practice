@@ -8,36 +8,64 @@ html, body {
     align-items: center;
     justify-items: center;
     justify-content: center;
-    border: solid black 2px;
     height: 100%;
-  }
+}
   
   
-  .top {
-    background-color: #0275D8;
-    height: 20px;
-    width: 100%;
-  }
-  
-  .login-box {
-    width: 430px;
-    height: 320px;
-    margin-right: 10%;
-    background-color: aqua;
-  }
-  
-  .menu-box {
-    width: 580px;
-    height: 320px;
-    box-sizing: border-box;
-    border: solid #CED4DA 1px;
-    border-radius: 5px;
-    padding: 0 2%
-  }
+.top {
+  background-color: #0275D8;
+  height: 20px;
+  width: 100%;
+}
 
-  .gowun-dodum-regular {
-    font-family: "Gowun Dodum", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
+.login-box {
+  width: 430px;
+  height: 320px;
+  margin-right: 10%;
+}
+
+.menu-box {
+  width: 580px;
+  height: 320px;
+  box-sizing: border-box;
+  border: solid #CED4DA 1px;
+  border-radius: 5px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding: 0 2%;
+}
+
+.gowun-dodum-regular {
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.smaller {
+  font-size: smaller;
+}
+
+.input-box {
+  width: 400px;
+  height: 75px;
+  box-sizing: border-box;
+  border: solid #CED4DA 1px;
+  border-radius: 5px;  
+}
+
+.login-button{
+  box-sizing: border-box;
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
+  background-color: #0275D8;
+  width: 400px;
+  height: 75px;
+  border-radius: 5px; 
+  border-width: 0;
+}

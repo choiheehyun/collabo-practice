@@ -8,3 +8,67 @@ html, body {
   height: 20px;
   width: 100%;
 }
+
+.text_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .button {
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  border: solid #525050 1px;
+  width: 300px;
+  height: 70px;
+  margin-top: 90px;
+  text-decoration-line: none;
+  color: inherit;
+} */
+
+.button {
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  border: solid #525050 1px;
+  width: 300px;
+  height: 70px;
+  margin-top: 90px;
+  text-decoration-line: none;
+  color: inherit;
+  padding-top: 25px;
+  box-sizing: border-box;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.grey {
+  color: #525050;
+  text-decoration-line: none;
+}
+
+.vertical_center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.contentbox {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.gowun-dodum-regular {
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
