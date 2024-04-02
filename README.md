@@ -28,22 +28,21 @@
 
 >>> ### 사용 방법
 >>> ```python
->>> # 1. 가상환경에서 필수 라이브러리 설치
+>>> 1. 가상환경에서 필수 라이브러리 설치
 >>> pip install -r requirements.txt
-
->>> # 2. DB 마이그레이션
+>>> 2. DB 마이그레이션
 >>> python manage.py makemigrations
 >>> python manage.py migrate
-
->>> # 3. 서버 실행
+>>> 3. 서버 실행
 >>> python manage.py runserver
 >>> ```
 
 
 >> ## 주요 기능
 >>> ### 실행 화면
+>>> #### 메인 페이지
 >>> ![메인 페이지](./images/index.PNG)
->>>
+>>> #### 로그인 성공 페이지
 >>> ![로그인 성공 페이지](./images/login_complete.PNG)
 >>> ### 구현 내용
 >>> #### BE
